@@ -1,130 +1,259 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="script.js" defer></script>
 
     <title>Hello, world!</title>
   </head>
   <body>
     <nav class="navbar navbar-light bg-light">
-        <span class="navbar-text">
-          <h1>My Scheduler</h1>
-        </span>
-        <span class="navbar-text" id="navtime">
-            
-          </span>
-      </nav>
-      <br>
-      <main>
-<!--  9: AM ID and Function on the Button and ID Input ----->
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-lg">9AM</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="in9">
-          <div class="input-group-append">
-            <button onclick=submit9() class="btn btn-outline-secondary" type="button" id="button-addon2 btn9">Submit</button>
-          </div>
+      <span class="navbar-text">
+        <h1>My Scheduler</h1>
+      </span>
+      <span class="navbar-text" id="navtime"> </span>
+    </nav>
+    <br />
+    <main>
+      <!--  9: AM ID and Function on the Button and ID Input ----->
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">9AM</span>
         </div>
-        <br>
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-lg">10AM</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="in10">
-          <div class="input-group-append">
-            <button onclick=submit10() class="btn btn-outline-secondary" type="button" id="button-addon2 btn10">Submit</button>
-          </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="in9"
+        />
+        <div class="input-group-append">
+          <button
+            onclick="submit9()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2 btn9"
+          >
+            Submit
+          </button>
         </div>
-        <br>
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-lg">11AM</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="in11">
-          <div class="input-group-append">
-            <button onclick=submit11() class="btn btn-outline-secondary" type="button" id="button-addon2 btn11">Submit</button>
-          </div>
+      </div>
+      <br />
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">10AM</span>
         </div>
-        <br>
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-lg">12PM</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="in12">
-          <div class="input-group-append">
-            <button onclick=submit12() class="btn btn-outline-secondary" type="button" id="button-addon2 btn12">Submit</button>
-          </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="in10"
+        />
+        <div class="input-group-append">
+          <button
+            onclick="submit10()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2 btn10"
+          >
+            Submit
+          </button>
         </div>
-        <br>
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-lg">1PM</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="in1">
-          <div class="input-group-append">
-            <button onclick=submit1() class="btn btn-outline-secondary" type="button" id="button-addon2 btn1">Submit</button>
-          </div>
+      </div>
+      <br />
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">11AM</span>
         </div>
-        <br>
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-lg">2PM</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="in2">
-          <div class="input-group-append">
-            <button onclick=submit2() class="btn btn-outline-secondary" type="button" id="button-addon2 btn2">Submit</button>
-          </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="in11"
+        />
+        <div class="input-group-append">
+          <button
+            onclick="submit11()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2 btn11"
+          >
+            Submit
+          </button>
         </div>
-        <br>
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-lg">3PM</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="in3">
-          <div class="input-group-append">
-            <button onclick=submit3() class="btn btn-outline-secondary" type="button" id="button-addon2 btn3">Submit</button>
-          </div>
+      </div>
+      <br />
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">12PM</span>
         </div>
-        <br>
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-lg">4PM</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="in4">
-          <div class="input-group-append">
-            <button onclick=submit4() class="btn btn-outline-secondary" type="button" id="button-addon2 btn4">Submit</button>
-          </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="in12"
+        />
+        <div class="input-group-append">
+          <button
+            onclick="submit12()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2 btn12"
+          >
+            Submit
+          </button>
         </div>
-        <br>
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-lg">5PM</span>
-          </div>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="in5">
-          <div class="input-group-append">
-            <button onclick=submit5() class="btn btn-outline-secondary" type="button" id="button-addon2 btn5">Submit</button>
-          </div>
+      </div>
+      <br />
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">1PM</span>
         </div>
-        
-
-
-      </main>
-
-    
-
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="in1"
+        />
+        <div class="input-group-append">
+          <button
+            onclick="submit1()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2 btn1"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <br />
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">2PM</span>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="in2"
+        />
+        <div class="input-group-append">
+          <button
+            onclick="submit2()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2 btn2"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <br />
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">3PM</span>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="in3"
+        />
+        <div class="input-group-append">
+          <button
+            onclick="submit3()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2 btn3"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <br />
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">4PM</span>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="in4"
+        />
+        <div class="input-group-append">
+          <button
+            onclick="submit4()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2 btn4"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <br />
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">5PM</span>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="in5"
+        />
+        <div class="input-group-append">
+          <button
+            onclick="submit5()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2 btn5"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
