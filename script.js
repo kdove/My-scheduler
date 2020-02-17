@@ -51,7 +51,7 @@ function submit4() {
   localStorage.setItem("7", event3);
   console.log(localstore7);
 }
-function submit4() {
+function submit5() {
   var event2 = document.getElementById("in5").value;
   console.log(event5);
   localStorage.setItem("7", event3);
