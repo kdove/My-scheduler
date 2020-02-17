@@ -48,14 +48,14 @@ function submit3() {
 function submit4() {
   var event4 = document.getElementById("in4").value;
   console.log(event4);
-  localStorage.setItem("7", event4);
-  console.log(localstore7);
+  localStorage.setItem("8", event4);
+  console.log(localstore8);
 }
 function submit5() {
   var event5 = document.getElementById("in5").value;
   console.log(event5);
-  localStorage.setItem("7", event5);
-  console.log(localstore7);
+  localStorage.setItem("9", event5);
+  console.log(localstore9);
 }
 
 localstore1();
