@@ -40,21 +40,21 @@ function submit2() {
   console.log(localstore6);
 }
 function submit3() {
-  var event2 = document.getElementById("in3").value;
+  var event3 = document.getElementById("in3").value;
   console.log(event3);
   localStorage.setItem("7", event3);
   console.log(localstore7);
 }
 function submit4() {
-  var event2 = document.getElementById("in4").value;
+  var event4 = document.getElementById("in4").value;
   console.log(event4);
-  localStorage.setItem("7", event3);
+  localStorage.setItem("7", event4);
   console.log(localstore7);
 }
 function submit5() {
-  var event2 = document.getElementById("in5").value;
+  var event5 = document.getElementById("in5").value;
   console.log(event5);
-  localStorage.setItem("7", event3);
+  localStorage.setItem("7", event5);
   console.log(localstore7);
 }
 
