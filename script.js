@@ -1,11 +1,17 @@
+// make sure the js file is working
 console.log("script file reporting for class");
+// make sure the jquerry moment library is working
 console.log(moment());
 
+// get the date and time and insert in the html element
 var getdatetime = document.getElementById("navtime");
+// get present date using the moment jquery library
 var presentdate = moment().format("MMMM Do YYYY, h:mm:ss a");
+// make sure the jquery moment library returns the present date
 console.log(presentdate);
+// set the getdatetime.textcontent to present date
 getdatetime.textContent = presentdate;
-
+// Function naming convention takes the UI element's visible to the user that the function is associated to, the naming convention forst takes the element that envokes the function in this case the "submit" button, and I append the other relevent UI elelemt to add context which is the input field title in this case it is "9" which represents the function is being run on the input field when the event associated with the function is envoked by the user, you will see "event" used in my naming convetion as well, the event naming convention is used to add addtional context
 function submit9() {
   var event9 = document.getElementById("in9").value;
   console.log(event9)
